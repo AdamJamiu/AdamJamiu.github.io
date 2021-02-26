@@ -239,12 +239,24 @@ nav{
   
 }
 
-.avatar{
+.avatar-wrap{
+  background-color: rgba(0,0,0,.29);
+  border-radius: 50rem;
+ 
   width: 15rem;
-  margin: 0;
-    padding: 0;
-  
-    transition: transform .5s ease-in-out;
+  height: 15rem;
+}
+.avatar{
+  width: 15rem;  
+  transition: transform .5s ease-in-out;
+  border-radius: 50rem;
+  cursor: pointer;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+.avatar:hover{
+  transform: translate(10px, -10px);
 }
 
 /*BUTTONS*/
@@ -527,16 +539,18 @@ textarea{
 }
 
 
-@media (min-width: 766px){
+@media (max-width: 700px){
   .about-txt {
     padding-left: 20%;
     padding-right: 20%;
+    
   }
 }
 
 
 @media (max-width: 992px){
 .about-grid {
+  text-align: center;
   
 
 }
@@ -545,11 +559,12 @@ textarea{
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
+  justify-content: center;
 }
 
 .avatar{
   margin-bottom: 2rem;
-  width: 10rem;
+
 }
 
 .about-grid{
@@ -571,6 +586,9 @@ textarea{
 
 .about-txt{
   line-height: 1.8;
+  text-align: left;
+  padding-right: 5rem;
+  padding-left: 5rem;
 }
 
 li:active{
@@ -587,7 +605,7 @@ li:active{
   font-weight: 600;
   margin-top: 27%;
   cursor: pointer;
-  margin-left: 45%;
+  margin-left: 42%;
   animation-name: floating; 
 	animation-duration: 3s; 
 	animation-iteration-count: infinite; 
