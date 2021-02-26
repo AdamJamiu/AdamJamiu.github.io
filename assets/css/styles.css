@@ -148,6 +148,20 @@ nav{
     transition: .5s;
   }
 }
+
+@media screen and (min-width: 995px){
+  .about-sec{
+  padding-left: 20%;
+  padding-right: 5%;
+  padding-top: 10%;
+  width: 100%;  
+}
+
+.about-txt{
+  width: 90%; 
+}
+
+}
 .nav__item{
   margin-bottom: var(--mb-4);
 }
@@ -242,7 +256,6 @@ nav{
 .avatar-wrap{
   background-color: rgba(0,0,0,.29);
   border-radius: 50rem;
- 
   width: 15rem;
   height: 15rem;
 }
@@ -394,17 +407,21 @@ nav{
 }
 
 /* ===== FOOTER =====*/
-.footer{
-  background-color: var(--second-color);
-  color: #fff;
+footer{
+  background-color: #171717;
   text-align: center;
-  font-weight: var(--font-semi);
-  padding: 2rem 0;
+  padding: 5%;
+  width: 100%;
 }
-.footer__title{
-  font-size: 2rem;
-  margin-bottom: var(--mb-4);
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10em;
+  text-align: left;
 }
+
 .footer__social{
   margin-bottom: var(--mb-4);
 }
@@ -412,6 +429,22 @@ nav{
   font-size: 1.5rem;
   color: #fff;
   margin: 0 var(--mb-2)
+}
+
+.footer-header{
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.footer-link{
+  color: #FFFFFF80;
+  font-size: 14px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: .5rem;
+    transition: color .35s;
+    text-align: left;
+    width: 80%;
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -514,15 +547,10 @@ textarea{
   
 }
 
-.about-sec{
-  padding: 5%;
-  width: 100%;
-  
-}
+
 
 .about-grid{
-  margin-left: 5%;
-  margin-right: 5%;  
+  
   
 }
 
@@ -533,16 +561,14 @@ textarea{
 }
   
 
-
 .name-head{
-  min-width: 50%;
+  width: 50%;
 }
 
 
 @media (max-width: 700px){
   .about-txt {
-    padding-left: 20%;
-    padding-right: 20%;
+    text-align: center;
     
   }
 }
@@ -551,15 +577,16 @@ textarea{
 @media (max-width: 992px){
 .about-grid {
   text-align: center;
-  
 
 }
+
+
 
 .about-wrap{
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
-  justify-content: center;
+  
 }
 
 .avatar{
@@ -587,8 +614,7 @@ textarea{
 .about-txt{
   line-height: 1.8;
   text-align: left;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  
 }
 
 li:active{
