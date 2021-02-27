@@ -410,15 +410,17 @@ nav{
 footer{
   background-color: #171717;
   text-align: center;
-  padding: 5%;
+  padding-left: 25%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   width: 100%;
 }
 
 .footer{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 10em;
+  gap: 10%;
   text-align: left;
 }
 
