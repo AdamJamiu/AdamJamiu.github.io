@@ -102,23 +102,20 @@ a{
 
 /*===== LAYOUT =====*/
 .bd-grid{
-  max-width: 1024px;
+  width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
-  width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+ 
 }
 .l-header{
-  max-width: 100%;
+  width: 100;
   background-image: url("/assets/img/squares.png") ;
-  background-repeat: no-repeat;
-  background-position: cover;
+  background-position: contain;
   color: white;
-  height: 540px;
+  height: 500px;
   background-size: 100%;
-  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+
 }
 
 
@@ -127,29 +124,28 @@ a{
   height: var(--header-height);
   display: flex;
   justify-content: center;
-  /*background: #171717; */
   align-items: center;
   font-weight: var(--font-semi);
+  
 }
 
-nav{
-  overflow: hidden;
-  position:fixed;
-}
+
 @media screen and (max-width: 768px){
   .nav__menu{
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: purple;
-    transition: .5s;
+    display: none;
+  }
+
+  
+}
+
+@media screen and (max-width: 777px){
+  .l-header{
+    height: 200px;
+    margin-bottom: 10%;
   }
 }
 
-@media screen and (min-width: 995px){
+@media screen and (min-width: 993px){
   .about-sec{
   padding-left: 20%;
   padding-right: 5%;
@@ -157,10 +153,29 @@ nav{
   width: 100%;  
 }
 
+.avatar-wrap{
+
+}
+
+
 .about-txt{
   width: 90%; 
 }
 
+}
+
+
+@media screen and (max-width: 558px){
+  .l-header{
+    background-size: cover;
+    height: 240px;
+    background-size: 500%;
+  }
+
+  .avatar-wrap{
+    background-color: #fff;
+    width: 10rem;
+  }
 }
 .nav__item{
   margin-bottom: var(--mb-4);
@@ -172,6 +187,7 @@ nav{
 
 .nav__link:active{
   color: #9a12b3;
+  font-style: unset;
 }
 .nav__link:hover{
   position: relative;
@@ -185,18 +201,10 @@ nav{
   top: 2rem;
   background-color: var(--first-color);
 }
-.nav__logo{
-  color: var(--second-color);
-  color: black;
-  padding: 8px;
-  border-radius: 100px;
 
-}
 
 .nav__toggle{
-  color: var(--second-color);
-  font-size: 1.5rem;
-  cursor: pointer;
+  display: none;
 }
 
 /*Active menu*/
@@ -256,16 +264,15 @@ nav{
 .avatar-wrap{
   background-color: rgba(0,0,0,.29);
   border-radius: 50rem;
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  
 }
 .avatar{
-  width: 15rem;  
+  width: 12em;  
+  
   transition: transform .5s ease-in-out;
   border-radius: 50rem;
   cursor: pointer;
-  padding-bottom: 5%;
-  padding-left: 5%;
 }
 
 .avatar:hover{
@@ -303,6 +310,9 @@ nav{
 }
 
 /* ===== SKILLS =====*/
+.skills{
+  padding: 5%;
+}
 .skills__container{
   row-gap: 2rem;
   text-align: center;
@@ -433,6 +443,10 @@ footer{
   margin: 0 var(--mb-2)
 }
 
+.bxl-instagram{
+  color: #FFFFFF80;
+  font-size: 2em;
+}
 .footer-header{
   color: #ffffff;
   font-weight: 900;
@@ -470,6 +484,8 @@ footer{
 
   .nav{
     height: calc(var(--header-height) + 1rem);
+    transition: .2s ease-in-out;
+    z-index: 9;
   }
   .nav__list{
     display: flex;
@@ -484,7 +500,8 @@ footer{
     display: none;
   }
   .nav__link{
-    color: #ffffff;
+    
+ 
   }
 
   .home{
@@ -509,7 +526,7 @@ footer{
   }
 
   .about__container, .skills__container{
-    grid-template-columns: repeat(2,1fr);
+    width: 60%;
     align-items: center;
     text-align: initial;
   }
@@ -630,8 +647,10 @@ li:active{
 }
 .home_scroll{
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
   font-weight: 600;
-  margin-top: 27%;
+  padding-top: 25%;
   cursor: pointer;
   margin-left: 42%;
   animation-name: floating; 
