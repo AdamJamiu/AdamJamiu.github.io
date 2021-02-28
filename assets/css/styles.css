@@ -90,29 +90,32 @@ a:link{
 
 .port-col{
   display: flex;
-  gap: 2em;
+  gap: 5em;
+  margin-bottom: 10%;
 }
 
 .port-head{
   font-weight: 900;
   font-size: 35px;
-  line-height: 0.9;
+  line-height: 1;
+  margin-top: 5%;
 }
 
 .port-label{
   color: #0000004A;
   font-weight: 800;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 .port-img{
   border-radius: 1rem;
     box-shadow: 2px 2px 50px rgb(0 0 0 / 15%);
     transition: transform .5s;
+    cursor: pointer;
 }
 
 .port-txt{
-  width: 50%;
-  padding-top: 10%;
+  width: 30%;
+  padding-top: 8%;
   text-align: left;
 }
 /*===== CLASS CSS ===== */
