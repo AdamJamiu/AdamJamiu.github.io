@@ -68,13 +68,53 @@ ul{
   padding: 0;
   list-style: none;
 }
-a{
+a:link{
   text-decoration: none;
+  
 }
 
+/*===== PORTFOLIO SECTION ===== */
+.portfolio{
+  background: #f7f4ff;
+  display: flex;
+  justify-content: center;
+}
 
+.portfolio-wrap{
+  margin-left: 20%;
+  margin-right: 15%;
+  border: 3px solid red;
+  padding: 2%;
+  
+}
 
+.port-col{
+  display: flex;
+  gap: 2em;
+}
 
+.port-head{
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 0.9;
+}
+
+.port-label{
+  color: #0000004A;
+  font-weight: 800;
+  margin-bottom: 5%;
+}
+.port-img{
+  border-radius: 1rem;
+    box-shadow: 2px 2px 50px rgb(0 0 0 / 15%);
+    transition: transform .5s;
+}
+
+.port-txt{
+  width: 50%;
+  padding-top: 10%;
+  text-align: left;
+}
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
@@ -446,6 +486,18 @@ footer{
 .bxl-instagram, .bxl-github, .bxl-twitter{
   color: #FFFFFF80;
   font-size: 2em;
+  cursor: pointer;
+}
+
+.bxl-instagram:hover, .bxl-github:hover, .bxl-twitter:hover{
+  color: #fff;
+  transition: .4s ease;
+}
+
+.ex:hover{
+  color: #fff;
+  transition: .4s ease;
+  cursor: pointer;
 }
 .footer-header{
   color: #ffffff;
