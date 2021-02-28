@@ -443,7 +443,7 @@ footer{
   margin: 0 var(--mb-2)
 }
 
-.bxl-instagram{
+.bxl-instagram, .bxl-github, .bxl-twitter{
   color: #FFFFFF80;
   font-size: 2em;
 }
