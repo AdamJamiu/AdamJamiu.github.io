@@ -63,31 +63,24 @@ a:link{
 
 #slider{
   display: inline-flex;
-  transition: 0.5s
-
+  transition: 0.5s;
+  justify-content: space-between;
 }
 
-.slider{
-  width: 600px;
-  border: 3px solid green;
-  text-align: center;
-  border: 3px solid red;
-  
-}
 
 .slider-col{
-  width: 600px;
+  width: 100vw;
+  display: flex;
 }
-
 
 .slider-container{
   padding-top: 10%;
   padding-bottom: 5%;
   border: 2px solid red;
   width: 600px;
-  overflow: hidden;
- background-color: green;
- transform: translateX(32em);
+  background-color: green;
+  width: 100%;
+  position: relative;
 }
 
 /*===== PORTFOLIO SECTION ===== */
@@ -228,10 +221,7 @@ a:link{
 }
 
 @media screen and (min-width: 993px){
-  .about-sec{
-  
-}
-
+ 
 .avatar-wrap{
 
 }
@@ -254,7 +244,7 @@ a:link{
 
   .avatar-wrap{
     background-color: #fff;
-    width: 10rem;
+    
   }
 }
 .nav__item{
@@ -343,16 +333,14 @@ a:link{
 
 .avatar-wrap{
   background-color: rgba(0,0,0,.29);
-  border-radius: 50rem;
-  width: 12rem;
   
 }
 .avatar{
-  width: 12em;  
-  
+  width: 10em;  
   transition: transform .5s ease-in-out;
   border-radius: 50rem;
   cursor: pointer;
+  
 }
 
 .avatar:hover{
@@ -585,6 +573,7 @@ footer{
   .nav__list{
     display: flex;
     padding-top: 0;
+    gap: 3em;
   }
   .nav__item{
     margin-left: var(--mb-6);
@@ -662,15 +651,17 @@ textarea{
 
 
 
-.about-grid{
-  
+.about-details{
+  display: inline-block;
   
 }
 
 .about-wrap{
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 35%;
+  padding-right: 25%;
   border: 3px solid yellow;
+  width: 100%;
+  
   
 }
   
