@@ -71,17 +71,14 @@ a:link{
 .slider-col{
   width: 100vw;
   display: flex;
+  background-color: green;
+  padding-left: 10rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  border: 3px solid orange; 
 }
 
-.slider-container{
-  padding-top: 10%;
-  padding-bottom: 5%;
-  border: 2px solid red;
-  width: 600px;
-  background-color: green;
-  width: 100%;
-  position: relative;
-}
+
 
 /*===== PORTFOLIO SECTION ===== */
 .portfolio{
@@ -242,11 +239,9 @@ a:link{
     background-size: 500%;
   }
 
-  .avatar-wrap{
-    background-color: #fff;
-    
-  }
 }
+
+
 .nav__item{
   margin-bottom: var(--mb-4);
 }
@@ -332,7 +327,8 @@ a:link{
 }
 
 .avatar-wrap{
-  background-color: rgba(0,0,0,.29);
+  
+  
   
 }
 .avatar{
@@ -645,24 +641,25 @@ textarea{
   font-size: 20px;
   color: #0000004A;
   font-weight: bold;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
   
 }
 
 
 
 .about-details{
-  display: inline-block;
+  width: 30em;
   
 }
 
 .about-wrap{
-  padding-left: 35%;
-  padding-right: 25%;
-  border: 3px solid yellow;
+  background-color: yellow;
+  border: 3px solid red;
   width: 100%;
-  
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
   
 
