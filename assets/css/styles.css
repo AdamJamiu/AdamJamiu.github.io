@@ -70,12 +70,11 @@ a:link{
 
 .slider-col{
   width: 100vw;
-  display: flex;
-  background-color: green;
   padding-left: 10rem;
   padding-right: 5rem;
   padding-top: 1rem;
-  border: 3px solid orange; 
+  
+  height: 70vh;
 }
 
 
@@ -375,76 +374,60 @@ a:link{
 
 /* ===== SKILLS =====*/
 .skills-wrap{
-  padding-left: 5%;
-  padding-right: 5%;
-  border: 3px solid yellow;
+  display: flex;
+  flex-direction: column;
+  padding-left: 27%;
+  padding-right: 20%;
+  padding-top: 10rem;
+  
+  width: 100%;
+  height: 100%;
   
 }
+
+.skills__grid-wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+ 
+}
+
 .skills__container{
   row-gap: 2rem;
-  text-align: center;
+
 }
 .skills__subtitle{
-  margin-bottom: var(--mb-2);
+  margin-bottom: 1em;
+  color: #9a12b3;
 }
-.skills__text{
-  margin-bottom: var(--mb-4);
-}
-.skills__data{
+
+.skills-content{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: .5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
-}
-.skills__icon{
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-.skills__names{
-  display: flex;
-  align-items: center;
-}
-.skills__bar{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: .25rem;
-  border-radius: .5rem;
-  z-index: var(--z-back);
-}
-.skills__html{
-  width: 95%;
-}
-.skills__css{
-  width: 85%;
-}
-.skills__js{
-  width: 65%;
-}
-.skills__react{
-  width: 60%;
-}
-.skills__jQuery{
-  width: 65%;
-}
-.skills__bootstrap{
-  width: 80%;
+  flex-direction: row;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  font-weight: 500;
+  color: rgba(0,0,0,.65);
+  
 }
 
 
-.skills__ux{
-  width: 85%;
+.skills__name{
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
 }
-.skills__img{
-  border-radius: .15rem;
+
+.skills-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.skills-header{
+  color: #000000;
+  font-weight: 900;
+  margin-bottom: 0.4em;
+}
+  
 
 /* ===== WORK =====*/
 .work__container{
@@ -653,9 +636,9 @@ textarea{
 }
 
 .about-wrap{
-  background-color: yellow;
-  border: 3px solid red;
+  
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -668,6 +651,22 @@ textarea{
 }
 
 
+.passion-wrap{
+  width: 100%;
+  height: 100%;
+}
+
+.passion-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15em;
+}
+
+.passion__header{
+  line-height: 5;
+}
 @media (max-width: 700px){
   .about-txt {
     text-align: center;
