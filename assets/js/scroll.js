@@ -1,19 +1,20 @@
 
 
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > 426) {
-	   
-        $(".nav").css("background" , "#171717");  
-          $(".nav").css("position" , "fixed"); 	
-	  }
+var line1 = document.getElementById('line1');
+var line2 = document.getElementById('line2');
+var line3 = document.getElementById('line3');
+var slider = document.getElementById('slider');
 
+line1.onclick = function() {
+  slider.style.transform = 'translateX(0)';
+}
 
-	  else {
-        $(".nav").css("position" , "relative");
-        $(".nav").css("background" , "none");  
-	  }
-  })
-})
+line2.onclick = function() {
+  slider.style.transform = 'translateX(-215%)';
+}
+
+line3.onclick = function() {
+  slider.style.transform = 'translateX(-50)';
+}
+
