@@ -76,6 +76,11 @@ a:link{
   height: 70vh;
 }
 
+.slider-container{
+  overflow: hidden;
+  
+}
+
 
 
 /*===== PORTFOLIO SECTION ===== */
