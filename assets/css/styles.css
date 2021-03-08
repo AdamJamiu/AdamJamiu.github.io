@@ -93,6 +93,8 @@ a:link{
   margin-left: 20%;
   margin-right: 15%;
   padding: 2%;
+  display: flex;
+  flex-direction: column;
   
 }
 
@@ -123,6 +125,7 @@ a:link{
     height: auto;
     display: block;
     width: 100%;
+  
 }
 
 .port-details{
@@ -145,6 +148,10 @@ a:link{
   text-align: left;
   font-size: .875rem;
   color: #000000A6;
+}
+
+.port-2, .port-4, .port-6{
+  flex-direction: row-reverse;
 }
 /*===== CLASS CSS ===== */
 .section-title{
@@ -789,8 +796,15 @@ footer{
 }
 
 .overlay-text {
-  color: #9a12b3;
-  font-size: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #9a12b3;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  cursor: pointer;
+  padding-bottom: 0.5em;
+  border-radius: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
