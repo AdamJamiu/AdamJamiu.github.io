@@ -313,6 +313,9 @@ a:link{
     background-size: 500%;
   }
 
+  nav{
+    visibility: hidden;
+  }
 }
 
 
