@@ -13,10 +13,11 @@ Project repo: https://github.com/AdamJamiu/AdamJamiu.github.io
 
 html{
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 body{
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  
 }
 
 ul{
@@ -222,7 +223,7 @@ a:link{
   color: #f2f2f2;
 }
 
-ul li{
+nav ul li{
   display: inline-block;
   padding: 2em;
   
@@ -356,9 +357,10 @@ ul li{
 .skills-wrap{
   display: flex;
   flex-direction: column;
-  padding-left: 27%;
-  padding-right: 20%;
+  justify-content: center;
+  align-items: center;
   padding-top: 10rem;
+  width: 100%;
   
 }
 
@@ -532,11 +534,21 @@ footer{
   
 }
   
-
+.about__wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
 .name-head{
   width: 50%;
 }
 
+
+@media only screen and (max-width: 765px){
+  .about__wrap{
+    flex-direction: column;
+  }
+}
 
 .passion-wrap{
   width: 100%;
@@ -553,20 +565,71 @@ footer{
 }
 
 .passion__header{
-  line-height: 3;
+
 }
 
 .bx-code-alt, .bx-book-open, .bx-laptop{
-  font-size: 20px;
+  font-size: 24px;
   color: #9a12b3;
+  position: relative;
+  top: 5px;
+  right: 10px;
 }
 
-.passion__wrap{
+.passion-wrapper{
   display: flex;
-  column-gap: 3em;
+  flex-direction: column;
+  gap: 1em;
+} 
+
+
+
+.passions{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.passion__text{
+  color: #0000004A;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
 }
 
+.progress__wrap{
+  border-radius: .5rem;
+  background-color: #e0e0e0;;
+  width: 130px;
+  height: 10px;
+  
+}
 
+.progress__bar-english{
+  background-color: #9a12b3;
+  height: 10px;
+  width: 90%;
+  border-radius: 10px;
+
+}
+
+.progress__bar-arabic{
+  background-color: #9a12b3;
+  height: 10px;
+  width: 45%;
+  border-radius: 10px;
+}
+
+.passion__subtitle{
+  font-weight: 700;
+}
+
+.sub__title{
+  color: #878787;
+}
+
+.passion-grid ul li{
+  
+}
 
 /* =====  CONTROLLER  =====*/
 
