@@ -375,6 +375,7 @@ nav ul li{
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 6em;
+  padding-left: 12em;
   
 }
 
@@ -385,6 +386,7 @@ nav ul li{
 .skills__subtitle{
   margin-bottom: 1em;
   color: #9a12b3;
+  font-size: 20px;
 }
 
 .skills-content{
@@ -408,8 +410,18 @@ nav ul li{
   flex-direction: column;
   justify-content: center;
   align-items: left;
- 
+  width: 50%;
 }
+@media only screen and (max-width: 986px){
+  .skills__name{
+    font-size: 20px;
+  }
+
+  body{
+    font-size: 22px;
+  }
+}
+
 .skills-header{
   color: #000000;
   font-weight: 900;
