@@ -146,6 +146,12 @@ a:link{
     height: auto;
     display: block;
     width: 100%;
+    
+
+}
+
+.port-img:hover{
+  transform: scaleY(1);
   
 }
 
