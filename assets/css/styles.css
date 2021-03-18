@@ -14,6 +14,7 @@ Project repo: https://github.com/AdamJamiu/AdamJamiu.github.io
 html{
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
 body{
   margin: 0;
@@ -128,8 +129,7 @@ a:link{
 
 .port-head{
   font-weight: 900;
-  font-size: 35px;
-
+  font-size: 24px;
   margin-top: 5%;
 }
 
@@ -376,6 +376,7 @@ nav ul li{
   flex-wrap: nowrap;
   gap: 6em;
   padding-left: 12em;
+  padding-right: 12em;
   
 }
 
@@ -386,7 +387,7 @@ nav ul li{
 .skills__subtitle{
   margin-bottom: 1em;
   color: #9a12b3;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .skills-content{
@@ -403,6 +404,7 @@ nav ul li{
 .skills__name{
   border-bottom: 1px solid black;
   font-size: 1em;
+
 }
 
 .skills-row{
@@ -416,12 +418,21 @@ nav ul li{
   .skills__name{
     font-size: 20px;
   }
-
-  body{
-    font-size: 22px;
-  }
+ 
 }
 
+@media only screen and (max-width: 1046px){
+  .skills__grid-wrap{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+  }
+
+  .skills-content{
+    width:100%;
+  }
+}
 .skills-header{
   color: #000000;
   font-weight: 900;
@@ -525,7 +536,14 @@ footer{
     width: 80%;
 }
 
-
+@media only screen and (max-width: 400px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    column-gap: 2em;
+    justify-content: center;
+  }
+}
 
 /* ===== About Section=====*/
 
@@ -549,30 +567,25 @@ footer{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
-}
-  
-.about__wrap{
-  display: flex;
-  flex-direction: row;
   gap: 4em;
+  padding-top: 5em;
 }
+  
+
 .name-head{
   width: 50%;
 }
 
 
-@media only screen and (max-width: 765px){
-  .about__wrap{
-    flex-direction: column;
-  }
-  
-}
-
 .passion-wrap{
   width: 100%;
   height: 100%;
+  padding-top: 5em;
   
+}
+
+.passion__header{
+  font-size: 18px;
 }
 
 .passion-row{
@@ -583,12 +596,10 @@ footer{
     gap: 15em;
 }
 
-.passion__header{
-
-}
 
 .bx-code-alt, .bx-book-open, .bx-laptop{
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: bolder;
   color: #9a12b3;
   position: relative;
   top: 5px;
@@ -612,7 +623,7 @@ footer{
   color: #0000004A;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .progress__wrap{
@@ -814,7 +825,7 @@ footer{
 .about-txt{
   line-height: 1.8;
   text-align: left;
-  
+  font-size: .987rem;
 }
 
 li:active{
@@ -846,7 +857,11 @@ li:active{
 	100% { transform: translate(0, -0px); }	 
 } 
 
-
+@media only screen and (max-width: 400px){
+  .about-txt{
+    font-size: 2.5rem;
+  }
+}
 .bx-down-arrow-alt{
   font-size: 1.3em;
 }
