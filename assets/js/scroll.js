@@ -1,21 +1,9 @@
-
-function statusChecker() {
-
-    let oNline = navigator.onLine;
-    
-
-    let wrapper = document.getElementById("wrapper");
-
-if (navigator.onLine == false){
-    console.log("Jamiu");
-    
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
 }
-
-else  {
-    
-    console.log("Adam");
-}
-
-}
-
-statusChecker();

@@ -13,6 +13,7 @@
          <link rel="shortcut icon" href="assets/img/atom.svg" type="image/x-icon">  
        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,7 +31,7 @@
 
         
         <div class=" l-header">
-            <nav class="nav">
+            <nav class="nav" id="navbar">
             
                     <ul class="nav__list">
 
@@ -244,6 +245,26 @@
         <script src="assets/js/main.js"></script>
 
         <!--===== UniCons=====-->
-        <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"/>
-    </body>
+        <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"/></script>
+            
+        <script>
+            
+            $(document).ready(function(){       
+        var scroll_pos = 0;
+        $(document).scroll(function() {
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 400) {
+                $(".nav").css('position', 'fixed');
+                $(".nav").css('background-color', '#fff');
+                $(".nav__link").css('color', 'rgba(15, 15, 15, 0.75)');
+            } else if(scroll_pos < 400){
+            
+                $(".nav").css('background-color', 'transparent');
+            }
+        });
+    });
+            </script>
+
+</body>
+
 </html>
