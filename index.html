@@ -38,7 +38,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Work</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
 
@@ -116,7 +116,7 @@
             <!--===== SKILLS =====-->
            
 
-                <div class="skills-wrap">
+                <div class="skills-wrap" id="skills">
 
                     <h2 class="skills-header">Skills</h2>
                     
@@ -160,7 +160,7 @@
 
             <!--===== PORTFOLIO =====--> 
             
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="portfolio-wrap">
                     <div class="port-head">Portfolio</div>
                     <span class="port-label">Works i have done</span>
@@ -203,6 +203,15 @@
                 </div>
 
             </section>
+
+            <!--===== CONTACT=====-->
+
+            <section class="contact-section">
+                <div class="contact-wrap">
+                    
+                    
+                    </div>
+                </section>
 
         <!--===== FOOTER =====-->
         
@@ -256,10 +265,12 @@
             if(scroll_pos > 400) {
                 $(".nav").css('position', 'fixed');
                 $(".nav").css('background-color', '#fff');
+                $(".nav__link").css('font-weight', '700');
                 $(".nav__link").css('color', 'rgba(15, 15, 15, 0.75)');
             } else if(scroll_pos < 400){
-            
+                $(".nav__link").css('color', 'rgba(255,255,255,.75)');
                 $(".nav").css('background-color', 'transparent');
+                $(".nav__link").css('font-weight', '500');
             }
         });
     });
