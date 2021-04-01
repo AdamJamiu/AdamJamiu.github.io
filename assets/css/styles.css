@@ -157,13 +157,12 @@ a:link{
 
 .port-details{
  width: 35rem;
- padding-top: 8%;
 }
 
 .project-name{
   font-size: 20px;
   font-weight: 750;
-  line-height: 2.9;
+  line-height: 2.5;
 }
 
 
@@ -172,7 +171,7 @@ a:link{
   width: 100%;
   text-align: left;
   font-size: .875rem;
-  color: #000000A6;
+  color: #878787;
 }
 
 .port-2, .port-4, .port-6{
@@ -396,8 +395,8 @@ nav ul li:hover,
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 6em;
-  padding-left: 12em;
-  padding-right: 12em;
+  padding-left: 10em;
+  padding-right: 10em;
   
 }
 
@@ -434,6 +433,7 @@ nav ul li:hover,
   justify-content: center;
   align-items: left;
   width: 50%;
+  height: fit-content;
 }
 @media only screen and (max-width: 986px){
   .skills__name{
@@ -642,8 +642,7 @@ footer{
   gap: 2em;
 }
 .passion__text{
-  color: #0000004A;
-  font-weight: 600;
+  color: #878787;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
@@ -756,11 +755,6 @@ footer{
  
 }
 
-.port-details{
-  width: 15rem;
- 
-  padding-top: 0;
-}
 .port-txt{
   
   text-align: center;
