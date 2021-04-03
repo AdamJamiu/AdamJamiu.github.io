@@ -341,7 +341,14 @@ nav ul li:hover,
   border-radius: 50rem;
   cursor: pointer;
   
-}
+  }
+
+  .ANIMATION{
+    visibility: visible;
+    opacity: 0;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -80, 0, 1);
+    transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+  }
 
 .avatar:hover{
   transform: translate(10px, -10px);
