@@ -111,7 +111,7 @@ a:link{
   justify-content: center;
 }
 
-.portfolio-wrap{
+.portfolio-wrap{ 
   margin-left: 20%;
   margin-right: 15%;
   padding: 2%;
@@ -236,8 +236,8 @@ a:link{
 
 nav ul li{
   display: inline-block;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-right: 0.4em;
+  padding-left: 0.4em;
   font-size: 17px;
 }
 
@@ -390,9 +390,6 @@ nav ul li:hover,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
-  padding-bottom: 10em;
-  width: 100%;
   
 }
 
@@ -588,14 +585,13 @@ footer{
 }
 
 .about-wrap{
-  width: 100%;
-  height: 40vh;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 4em;
-  padding-top: 5em;
+  
 }
   
 
@@ -607,7 +603,7 @@ footer{
 .passion-wrap{
   width: 100%;
   height: 100%;
-  padding-top: 5em;
+  
   
   
 }
@@ -684,9 +680,6 @@ footer{
   color: #878787;
 }
 
-.passion-grid ul li{
-  
-}
 
 /* =====  CONTROLLER  =====*/
 
@@ -886,4 +879,43 @@ li:active{
 }
 .bx-down-arrow-alt{
   font-size: 1.3em;
+}
+
+
+.swiper-container{
+  width: 100%;
+  height: 100%;
+  margin-top: 15em;
+  margin-bottom: 15em;
+  overflow: hidden;
+  cursor:move;
+}
+
+.swiper-wrapper{
+  flex-direction: row;
+  display: flex;
+  overflow: hidden;
+  width: fit-content;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 100%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
 }
