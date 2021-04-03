@@ -10,11 +10,19 @@ Github: https://github.com/AdamJamiu/
 Project repo: https://github.com/AdamJamiu/AdamJamiu.github.io
 
 =====*/
-
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 html{
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+}
+@media only screen and (max-width: 400px){
+  html{
+    font-size: 2em;
+  }
 }
 body{
   margin: 0;
@@ -205,9 +213,10 @@ a:link{
 
 .l-header{
   background-image: url("/assets/img/squares.png") ;
-  height: 70vh;
+  height: 60vh;
   background-size: cover;
 }
+
 
 
 /*===== NAV =====*/
@@ -230,15 +239,11 @@ a:link{
 }
 
 
-#navbar{
-  
-}
-
 nav ul li{
   display: inline-block;
   padding-right: 0.4em;
   padding-left: 0.4em;
-  font-size: 1.1vw;
+  font-size: 1.5em;
 }
 
 nav ul li:hover,
@@ -275,12 +280,6 @@ nav ul li:hover,
     display: block;
     
   }
-
-  html{
-    font-size: 24px !important;
-  }
-
-  
   
 }
 
