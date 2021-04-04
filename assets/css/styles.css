@@ -130,7 +130,7 @@ a:link{
 
 .port-col{
   display: flex;
-  column-gap: 5em; 
+  column-gap: 3em; 
   margin-bottom: 15%;
  
 }
@@ -164,19 +164,22 @@ a:link{
 }
 
 .port-details{
- width: 35rem;
+ width: 20rem;
+ padding-top: 5em;
+
 }
 
 .project-name{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 750;
-  line-height: 2.5;
+  line-height: 1.5;
+  padding-bottom: 1em;
 }
 
 
 
 .port-txt{
-
+  line-height: 1.8;
   font-size: .875rem;
   color: #878787;
 }
