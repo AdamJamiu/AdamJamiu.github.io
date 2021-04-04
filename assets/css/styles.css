@@ -246,7 +246,7 @@ nav ul li{
   display: inline-block;
   padding-right: 0.4em;
   padding-left: 0.4em;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 nav ul li:hover,
@@ -262,7 +262,6 @@ nav ul li:hover,
 
 .nav__link:active{
   color: #9a12b3;
-  font-style: unset;
 }
 
 .nav__toggle{
@@ -392,6 +391,7 @@ nav ul li:hover,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   
 }
 
@@ -411,7 +411,7 @@ nav ul li:hover,
 .skill__subtitle{
   margin-bottom: 1em;
   color: #9a12b3;
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -463,6 +463,10 @@ nav ul li:hover,
   color: #000000;
   font-weight: 900;
   margin-bottom: 0.4em;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 2em;
+ 
 }
   
 
@@ -586,8 +590,13 @@ footer{
   
 }
 
+
+.bx-left-arrow-alt{
+  font-size: 25px;
+}
+
 .about-wrap{
-  
+  text-align: left;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -595,7 +604,6 @@ footer{
   gap: 4em;
   
 }
-  
 
 .name-head{
   width: 50%;
@@ -605,13 +613,12 @@ footer{
 .passion-wrap{
   width: 100%;
   height: 100%;
-  
-  
-  
 }
+
 
 .passion__header{
   font-size: 18px;
+  line-height: 10;
 }
 
 .passion-row{
@@ -819,11 +826,15 @@ footer{
   font-size: 1.4rem;
 }
 
-.swipe-txt{
-  margin-left: 10%;
-  font-weight: bold;
-  font-family: 'Poppins';
-  
+.swipe{
+  margin-top: 5em;
+  color: #9a12b3;
+}
+
+.swipe span{
+  padding-left: .4em;
+  font-family: 'Poppins' sans-serif;
+  font-size: 1.4rem;
 }
 
 .swipe{
