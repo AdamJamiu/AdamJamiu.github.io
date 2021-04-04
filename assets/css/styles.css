@@ -618,7 +618,7 @@ footer{
 
 .passion__header{
   font-size: 18px;
-  line-height: 10;
+  line-height: 6;
 }
 
 .passion-row{
@@ -868,12 +868,9 @@ li:active{
 }
 .home_scroll{
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
   font-weight: 600;
-  margin-top: 20%;
   cursor: pointer;
-  margin-left: 42%;
+  
   animation-name: floating; 
 	animation-duration: 3s; 
 	animation-iteration-count: infinite; 
