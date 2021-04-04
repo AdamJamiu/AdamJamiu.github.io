@@ -217,12 +217,21 @@ a:link{
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+/*===== Header Section =====*/
 
 .l-header{
   background-image: url("/assets/img/squares.png") ;
   height: 60vh;
   background-size: cover;
+}
+
+.Home-text-animation{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 4em;
 }
 
 /*===== NAV =====*/
@@ -861,7 +870,12 @@ li:active{
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   cursor: pointer;
-  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40%;
+  align-items: flex-end;
   animation-name: floating; 
 	animation-duration: 3s; 
 	animation-iteration-count: infinite; 
