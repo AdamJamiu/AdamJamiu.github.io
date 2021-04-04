@@ -19,11 +19,6 @@ html{
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
-@media only screen and (max-width: 400px){
-  html{
-    font-size: 2em;
-  }
-}
 
 ::selection{
   background-color: #9a12b3;
@@ -219,15 +214,19 @@ a:link{
 
 /*===== Header Section =====*/
 
-.l-header{
+ .l-header{
   background-image: url("/assets/img/squares.png") ;
-  max-height: 60vh;
-  min-height: 20vh;
+  height: 60vh;
   background-size: cover;
 }
-@media only screen and (max-width: 450px){
+
+
+@media only screen and (max-width: 400px){
   .home__scroll{
     display: none;
+  }
+ .l-header{
+    background-size: 10%;
   }
 }
 
