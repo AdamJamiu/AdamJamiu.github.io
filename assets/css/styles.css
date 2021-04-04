@@ -221,12 +221,13 @@ a:link{
 
 .l-header{
   background-image: url("/assets/img/squares.png") ;
-  height: 60vh;
+  max-height: 60vh;
+  min-height: 20vh;
   background-size: cover;
 }
 @media only screen and (max-width: 450px){
-  .l-header{
-    height: 40vh;
+  .home__scroll{
+    display: none;
   }
 }
 
