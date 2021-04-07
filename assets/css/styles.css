@@ -27,7 +27,6 @@ html{
 body{
   margin: 0;
   padding: 0;
-  font-size: 17px;
 }
 
 ul{
@@ -279,54 +278,11 @@ nav ul li{
   display: none;
 }
 
-@media only screen and (max-width: 750px) {
-  
-  .nav{
-    flex-direction: column;
-    display: flex;
-    color: #f2f2f2;
-    width: 100%;
-    
-  }
-  .nav__list{
-    background-color: #9a12b3;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 60%;
-    position: absolute;
-    left: 0;
-    top: 1px;
-    width: 40vh;
-    padding: 16px 6px 16px 40px;
-    transition: .2s ease-in-out;    
-    transform: translateX(-300px);
-
-  }
-  .nav__link {
-    color: #fff;
-}
-
-.bx-menu{
-
-  width: 100%;
- 
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 5em;
-}
-
-  .bx-menu{
-    font-size: 29px;
-  }
-}
 
 @media only screen and (max-width: 600px) {
   
   .nav{
-   
+    background-color: #9a12b3;
     color: #f2f2f2;
     width: 100%;
     
@@ -336,12 +292,11 @@ nav ul li{
     display: block;
     
   }
+  body{
+    font-size: 20px;
+  }
   
 }
-
-
-
-
 
 
 /*=== Show menu ===*/
