@@ -55,3 +55,28 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+
+
+
+/*
+
+hamburger icon change onclick
+
+document.querySelector('button').addEventListener('click', function() {
+  const icon = this.querySelector('i');
+  const text = this.querySelector('span');
+
+  if (icon.classList.contains('fa-eye')) {
+    icon.classList.remove('fa-eye');
+    icon.classList.add('fa-eye-slash');
+    text.innerHTML = 'Hide';
+  } else {
+    icon.classList.remove('fa-eye-slash');
+    icon.classList.add('fa-eye');
+    text.innerHTML = 'Show';
+  }
+});
+
+*/
