@@ -278,11 +278,39 @@ nav ul li{
   display: none;
 }
 
+@media only screen and (max-width: 750px) {
+  
+  .nav{
+    flex-direction: column;
+    display: flex;
+    color: #f2f2f2;
+    width: 100%;
+    position: absolute !important;
+  }
+  .nav__list{
+    background-color: #9a12b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 40vh;
+    padding: 16px 6px 16px 40px;
+    transition: .2s ease-in-out;
+    /*
+    transform: translateX(-350px);
+    */
+
+  }
+
+}
 
 @media only screen and (max-width: 600px) {
   
   .nav{
-    background-color: #9a12b3;
+   
     color: #f2f2f2;
     width: 100%;
     
