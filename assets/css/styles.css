@@ -5,6 +5,7 @@
 
 /*===== 
 Author: Adam Jamiu {DLiTeCoder}
+Project Name: My Personal Portfolio Website
 Date: 2021
 Github: https://github.com/AdamJamiu/
 Project repo: https://github.com/AdamJamiu/AdamJamiu.github.io
@@ -227,7 +228,8 @@ a:link{
     display: none;
   }
  .l-header{
-  
+  background-size: 600%;
+    background-position: 100%;
   }
 }
 
