@@ -210,6 +210,7 @@ a:link{
 .section{
   padding-top: 3rem;
   padding-bottom: 2rem;
+  
 }
 
 /*===== Header Section =====*/
@@ -235,7 +236,6 @@ a:link{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 13px;
   margin-top: 4em;
   font-size: 25px;
   font-weight: 600;
@@ -295,7 +295,7 @@ nav ul li{
     
   }
   body{
-    font-size: 20px;
+    font-size: 24px;
   }
   
 }
