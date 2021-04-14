@@ -227,7 +227,7 @@ a:link{
     display: none;
   }
  .l-header{
-    display: none;
+  
   }
 }
 
@@ -718,7 +718,6 @@ footer{
 
 
 
-
 @media (max-width: 777px){
   .scroll {
     display: none;
@@ -739,7 +738,6 @@ footer{
   text-align: center;
 
 }
-
 
 
 .avatar{
@@ -765,7 +763,6 @@ footer{
 }
 
 .port-txt{
-  
   text-align: center;
   line-height: 1.9;
   color: #000000A6;
