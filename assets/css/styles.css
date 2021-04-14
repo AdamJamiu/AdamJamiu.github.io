@@ -231,6 +231,10 @@ a:link{
   background-size: 600%;
     background-position: 100%;
   }
+
+  .skills-wrap{
+    flex-direction: column;
+  }
 }
 
 .Home-text-animation{
@@ -311,7 +315,7 @@ nav ul li{
   align-self: center;
 }
 .home__title{
-  font-size:36px;
+  font-size:38px;
   margin-bottom: -0.8rem;
   font-weight: 800 ;
   
@@ -448,11 +452,13 @@ nav ul li{
 
 @media only screen and (max-width: 1046px){
   .skills__grid-wrap{
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-bottom: 5em;
+
   }
+
 
   .skills-content{
     width:100%;
@@ -460,7 +466,7 @@ nav ul li{
 }
 .skills-header{
   color: #000000;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 0.4em;
   text-align: left;
   width: 100%;
@@ -615,8 +621,9 @@ footer{
 
 
 .passion__header{
-  font-size: 18px;
-  line-height: 6;
+  font-size: 28px;
+  line-height: 4;
+  font-weight: 800;
 }
 
 .typewrite
@@ -629,7 +636,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15em;
+    gap: 10em;
 }
 
 
@@ -889,9 +896,11 @@ li:active{
 
 @media only screen and (max-width: 400px){
   .about-txt{
-    font-size: 2.5rem;
+    font-size: 1.2rem;
   }
 }
+
+
 .bx-down-arrow-alt{
   font-size: 1.3em;
 }
