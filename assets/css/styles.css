@@ -154,13 +154,34 @@ a:link{
     display: none;
   }
  .l-header{
-  background-size: cover;
-    background-position: 280%;
+  background-size: 1000%;
+    background-position: 180%;
   }
 
   .skills-wrap{
     flex-direction: column;
   }
+
+  .typewrite{
+    visibility: hidden;
+  }
+
+  div.passion-row{
+    gap: 2em;
+    flex-direction: column;
+
+  }
+
+  .about-wrap{
+    flex-direction: column;
+    gap: 1em;
+    }
+
+    .skills__grid-wrap{
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
 }
 
 .Home-text-animation{
@@ -326,12 +347,13 @@ nav ul li{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .skills__grid-wrap{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 6em;
 }
 
@@ -503,6 +525,13 @@ footer{
     column-gap: 2em;
     justify-content: center;
   }
+
+  .skills-wrap{
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 
 /* ===== About Section=====*/
@@ -525,6 +554,7 @@ footer{
   font-size: 25px;
 }
 
+
 .about-wrap{
   text-align: left;
   display: flex;
@@ -532,7 +562,8 @@ footer{
   align-items: center;
   justify-content: center;
   gap: 4em;
-  
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .name-head{
@@ -563,6 +594,7 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 10em;
+    flex-wrap: wrap;
 }
 
 
