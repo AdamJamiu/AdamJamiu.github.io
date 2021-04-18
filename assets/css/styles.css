@@ -64,7 +64,7 @@ a:link{
 
 .port-head{
   font-weight: 900;
-  font-size: 24px;
+  font-size: 34px;
   margin-top: 5%;
 }
 
@@ -92,7 +92,7 @@ a:link{
 
 .port-details{
  width: 20rem;
- padding-top: 5em;
+ padding-top: 4em;
 
 }
 
@@ -154,8 +154,8 @@ a:link{
     display: none;
   }
  .l-header{
-  background-size: 600%;
-    background-position: 100%;
+  background-size: cover;
+    background-position: 280%;
   }
 
   .skills-wrap{
