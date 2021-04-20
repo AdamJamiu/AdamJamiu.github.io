@@ -182,6 +182,10 @@ a:link{
       flex-wrap: wrap;
     }
 
+    h2.skills-header{
+      text-align: center;
+    }
+
 }
 
 .Home-text-animation{
