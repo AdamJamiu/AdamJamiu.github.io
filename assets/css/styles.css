@@ -399,6 +399,28 @@ nav ul li{
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  .port-details{
+    padding-top: 2em;
+    
+  }
+
+  .swipe{
+   
+    display: none;
+  }
+
+  .skills__name{
+    font-size: 16px;
+  }
+
+  p.skills-content{
+    width: 100%;
+  }
+
+  .port-label{
+    margin-bottom: 9em;
+  }
   div.about-wrap{
     flex-direction: column-reverse;
     gap: 0em;
