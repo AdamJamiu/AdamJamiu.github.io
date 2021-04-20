@@ -172,14 +172,11 @@ a:link{
 
   }
 
-  .about-wrap{
-    flex-direction: column;
-    gap: 1em;
-    }
 
     .skills__grid-wrap{
       flex-direction: column;
-      flex-wrap: wrap;
+      flex-direction: row;
+      width: 100%;
     }
 
     h2.skills-header{
@@ -357,7 +354,7 @@ nav ul li{
 .skills__grid-wrap{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  
   gap: 6em;
 }
 
@@ -392,9 +389,32 @@ nav ul li{
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  width: 50%;
+  width: 30%;
+  flex-wrap: wrap;
   height: fit-content;
 }
+
+@media only screen and (max-width: 550px){
+  div.skills__grid-wrap{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  div.about-wrap{
+    flex-direction: column-reverse;
+    gap: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    }
+
+ 
+}
+
+
 @media only screen and (max-width: 986px){
   .skills__name{
     font-size: 20px;
@@ -419,8 +439,7 @@ nav ul li{
 .skills-header{
   color: #000000;
   font-weight: 800;
-  margin-bottom: 0.4em;
-  text-align: left;
+  text-align: center;
   width: 100%;
   margin-bottom: 2em;
 }
@@ -566,7 +585,7 @@ footer{
   align-items: center;
   justify-content: center;
   gap: 4em;
-  flex-wrap: wrap;
+  
   width: 100%;
 }
 
