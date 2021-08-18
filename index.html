@@ -1,60 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!--===== Unicons =====-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
     <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
     <script src="/assets/js/main.js"></script>
-    
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABsUlEQVRIS7WUvy4EURTGZysKQkNJg4TGvwcgoSR4ALIUJDwACYmVkPAAJBRseABklSQ8AKEhQUNJQyjo/L7kzubu7M7OnZG5yS8zd+bM9517ztyb8VIemZT1vaQGrST24pJcEoNOhO/hGdqjTJIYTCO6DycwkYbBLqKzsARbaRjcItoNg3D1H4MePh6DNUukjvsvM6/l+gs5Uy4Zl42wHowTeQCNps6qt8YQnMMN9IPijuED1Bs/rmhUyUAZrZqIU65ZI6BHy7AOO7BgEshz1Uo19K294pJ9oGyVtbLSUKA+sEeByQhMwZH1QnF+UlqFVqNVlRj4zfvkeRbKlsuzN2iCDngKmCuxPDSAtHrDDMLqqU31CO/QHBDX1O7bHXP9JGUlUgZh9Zzk3SGcwWjAIMe8Yt+immzXcxuReViBDWMQ2bdqv6lfTx0HMrqGPhiGC2Pg/6ahfat2FqmGEtDya+DHiNZz/bZKpPdKINZGC5TYG+DBJRSbFwwIm7ueposIbMIezLmKK87VQMeByjUD2ozOw9VAm6oNuuDBWT3GCqTZAq9xxOOUKK5uMd61RIkN/gAIU1QZhrWMPQAAAABJRU5ErkJggg==" type="image/gif" sizes="26x26">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <meta name="theme-color" content="#9a12b3" />
-    <meta name="description" content="Adam Jamiu  Personal Portfolio Website">
-    <meta name="description" content="Front end developers in Nigeria">
 
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABsUlEQVRIS7WUvy4EURTGZysKQkNJg4TGvwcgoSR4ALIUJDwACYmVkPAAJBRseABklSQ8AKEhQUNJQyjo/L7kzubu7M7OnZG5yS8zd+bM9517ztyb8VIemZT1vaQGrST24pJcEoNOhO/hGdqjTJIYTCO6DycwkYbBLqKzsARbaRjcItoNg3D1H4MePh6DNUukjvsvM6/l+gs5Uy4Zl42wHowTeQCNps6qt8YQnMMN9IPijuED1Bs/rmhUyUAZrZqIU65ZI6BHy7AOO7BgEshz1Uo19K294pJ9oGyVtbLSUKA+sEeByQhMwZH1QnF+UlqFVqNVlRj4zfvkeRbKlsuzN2iCDngKmCuxPDSAtHrDDMLqqU31CO/QHBDX1O7bHXP9JGUlUgZh9Zzk3SGcwWjAIMe8Yt+immzXcxuReViBDWMQ2bdqv6lfTx0HMrqGPhiGC2Pg/6ahfat2FqmGEtDya+DHiNZz/bZKpPdKINZGC5TYG+DBJRSbFwwIm7ueposIbMIezLmKK87VQMeByjUD2ozOw9VAm6oNuuDBWT3GCqTZAq9xxOOUKK5uMd61RIkN/gAIU1QZhrWMPQAAAABJRU5ErkJggg=="
+      type="image/gif"
+      sizes="26x26"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <meta name="theme-color" content="#9a12b3" />
+    <meta name="description" content="Adam Jamiu  Personal Portfolio Website" />
+    <meta name="description" content="Front end developers in Nigeria" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/scrollAnimation.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <title> Adam Jamiu | Personal Website</title>
+    <title>Adam Jamiu | Personal Website</title>
+  </head>
 
-</head>
+  <body>
+    <div class="l-header">
+      <nav class="nav" id="navbar">
+        <div class="nav__items">
+          <svg
+            width="133"
+            height="31"
+            viewBox="0 0 233 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.389 25.079H8.103L6.401 30H0.962L10.249 4.137H16.28L25.567 30H20.091L18.389 25.079ZM16.983 20.935L13.246 10.131L9.509 20.935H16.983ZM27.7064 19.677C27.7064 17.605 28.1134 15.7673 28.9274 14.164C29.766 12.5607 30.9007 11.3273 32.3314 10.464C33.762 9.60067 35.353 9.169 37.1044 9.169C38.4364 9.169 39.7067 9.465 40.9154 10.057C42.124 10.6243 43.086 11.389 43.8014 12.351V2.62H49.0554V30H43.8014V26.966C43.16 27.9773 42.2597 28.7913 41.1004 29.408C39.941 30.0247 38.5967 30.333 37.0674 30.333C35.3407 30.333 33.762 29.889 32.3314 29.001C30.9007 28.113 29.766 26.8673 28.9274 25.264C28.1134 23.636 27.7064 21.7737 27.7064 19.677ZM43.8384 19.751C43.8384 18.493 43.5917 17.42 43.0984 16.532C42.605 15.6193 41.939 14.9287 41.1004 14.46C40.2617 13.9667 39.3614 13.72 38.3994 13.72C37.4374 13.72 36.5494 13.9543 35.7354 14.423C34.9214 14.8917 34.2554 15.5823 33.7374 16.495C33.244 17.383 32.9974 18.4437 32.9974 19.677C32.9974 20.9103 33.244 21.9957 33.7374 22.933C34.2554 23.8457 34.9214 24.5487 35.7354 25.042C36.574 25.5353 37.462 25.782 38.3994 25.782C39.3614 25.782 40.2617 25.5477 41.1004 25.079C41.939 24.5857 42.605 23.895 43.0984 23.007C43.5917 22.0943 43.8384 21.009 43.8384 19.751ZM52.7825 19.677C52.7825 17.605 53.1895 15.7673 54.0035 14.164C54.8422 12.5607 55.9645 11.3273 57.3705 10.464C58.8012 9.60067 60.3922 9.169 62.1435 9.169C63.6729 9.169 65.0049 9.47733 66.1395 10.094C67.2989 10.7107 68.2239 11.4877 68.9145 12.425V9.502H74.1315V30H68.9145V27.003C68.2485 27.965 67.3235 28.7667 66.1395 29.408C64.9802 30.0247 63.6359 30.333 62.1065 30.333C60.3799 30.333 58.8012 29.889 57.3705 29.001C55.9645 28.113 54.8422 26.8673 54.0035 25.264C53.1895 23.636 52.7825 21.7737 52.7825 19.677ZM68.9145 19.751C68.9145 18.493 68.6679 17.42 68.1745 16.532C67.6812 15.6193 67.0152 14.9287 66.1765 14.46C65.3379 13.9667 64.4375 13.72 63.4755 13.72C62.5135 13.72 61.6255 13.9543 60.8115 14.423C59.9975 14.8917 59.3315 15.5823 58.8135 16.495C58.3202 17.383 58.0735 18.4437 58.0735 19.677C58.0735 20.9103 58.3202 21.9957 58.8135 22.933C59.3315 23.8457 59.9975 24.5487 60.8115 25.042C61.6502 25.5353 62.5382 25.782 63.4755 25.782C64.4375 25.782 65.3379 25.5477 66.1765 25.079C67.0152 24.5857 67.6812 23.895 68.1745 23.007C68.6679 22.0943 68.9145 21.009 68.9145 19.751ZM104.647 9.206C107.163 9.206 109.185 9.983 110.715 11.537C112.269 13.0663 113.046 15.2123 113.046 17.975V30H107.866V18.678C107.866 17.0747 107.459 15.8537 106.645 15.015C105.831 14.1517 104.721 13.72 103.315 13.72C101.909 13.72 100.786 14.1517 99.9477 15.015C99.1337 15.8537 98.7267 17.0747 98.7267 18.678V30H93.5467V18.678C93.5467 17.0747 93.1397 15.8537 92.3257 15.015C91.5117 14.1517 90.4017 13.72 88.9957 13.72C87.565 13.72 86.4304 14.1517 85.5917 15.015C84.7777 15.8537 84.3707 17.0747 84.3707 18.678V30H79.1907V9.502H84.3707V11.981C85.0367 11.1177 85.8877 10.4393 86.9237 9.946C87.9844 9.45267 89.1437 9.206 90.4017 9.206C92.005 9.206 93.4357 9.55133 94.6937 10.242C95.9517 10.908 96.926 11.87 97.6167 13.128C98.2827 11.944 99.2447 10.9943 100.503 10.279C101.785 9.56367 103.167 9.206 104.647 9.206ZM133.02 4.174V22.304C133.02 24.82 132.293 26.781 130.837 28.187C129.382 29.5683 127.433 30.259 124.991 30.259C122.525 30.259 120.527 29.5437 118.997 28.113C117.493 26.6823 116.74 24.6843 116.74 22.119H121.92C121.945 23.229 122.204 24.0923 122.697 24.709C123.215 25.3257 123.955 25.634 124.917 25.634C125.855 25.634 126.57 25.338 127.063 24.746C127.557 24.154 127.803 23.34 127.803 22.304V4.174H133.02ZM137.731 19.677C137.731 17.605 138.138 15.7673 138.952 14.164C139.79 12.5607 140.913 11.3273 142.319 10.464C143.749 9.60067 145.34 9.169 147.092 9.169C148.621 9.169 149.953 9.47733 151.088 10.094C152.247 10.7107 153.172 11.4877 153.863 12.425V9.502H159.08V30H153.863V27.003C153.197 27.965 152.272 28.7667 151.088 29.408C149.928 30.0247 148.584 30.333 147.055 30.333C145.328 30.333 143.749 29.889 142.319 29.001C140.913 28.113 139.79 26.8673 138.952 25.264C138.138 23.636 137.731 21.7737 137.731 19.677ZM153.863 19.751C153.863 18.493 153.616 17.42 153.123 16.532C152.629 15.6193 151.963 14.9287 151.125 14.46C150.286 13.9667 149.386 13.72 148.424 13.72C147.462 13.72 146.574 13.9543 145.76 14.423C144.946 14.8917 144.28 15.5823 143.762 16.495C143.268 17.383 143.022 18.4437 143.022 19.677C143.022 20.9103 143.268 21.9957 143.762 22.933C144.28 23.8457 144.946 24.5487 145.76 25.042C146.598 25.5353 147.486 25.782 148.424 25.782C149.386 25.782 150.286 25.5477 151.125 25.079C151.963 24.5857 152.629 23.895 153.123 23.007C153.616 22.0943 153.863 21.009 153.863 19.751ZM189.595 9.206C192.111 9.206 194.134 9.983 195.663 11.537C197.217 13.0663 197.994 15.2123 197.994 17.975V30H192.814V18.678C192.814 17.0747 192.407 15.8537 191.593 15.015C190.779 14.1517 189.669 13.72 188.263 13.72C186.857 13.72 185.735 14.1517 184.896 15.015C184.082 15.8537 183.675 17.0747 183.675 18.678V30H178.495V18.678C178.495 17.0747 178.088 15.8537 177.274 15.015C176.46 14.1517 175.35 13.72 173.944 13.72C172.513 13.72 171.379 14.1517 170.54 15.015C169.726 15.8537 169.319 17.0747 169.319 18.678V30H164.139V9.502H169.319V11.981C169.985 11.1177 170.836 10.4393 171.872 9.946C172.933 9.45267 174.092 9.206 175.35 9.206C176.953 9.206 178.384 9.55133 179.642 10.242C180.9 10.908 181.874 11.87 182.565 13.128C183.231 11.944 184.193 10.9943 185.451 10.279C186.734 9.56367 188.115 9.206 189.595 9.206ZM205.536 7.06C204.624 7.06 203.859 6.77633 203.242 6.209C202.65 5.617 202.354 4.88933 202.354 4.026C202.354 3.16267 202.65 2.44733 203.242 1.88C203.859 1.288 204.624 0.991999 205.536 0.991999C206.449 0.991999 207.201 1.288 207.793 1.88C208.41 2.44733 208.718 3.16267 208.718 4.026C208.718 4.88933 208.41 5.617 207.793 6.209C207.201 6.77633 206.449 7.06 205.536 7.06ZM208.089 9.502V30H202.909V9.502H208.089ZM232.558 9.502V30H227.341V27.41C226.675 28.298 225.8 29.001 224.714 29.519C223.654 30.0123 222.494 30.259 221.236 30.259C219.633 30.259 218.215 29.926 216.981 29.26C215.748 28.5693 214.774 27.5703 214.058 26.263C213.368 24.931 213.022 23.3523 213.022 21.527V9.502H218.202V20.787C218.202 22.415 218.609 23.673 219.423 24.561C220.237 25.4243 221.347 25.856 222.753 25.856C224.184 25.856 225.306 25.4243 226.12 24.561C226.934 23.673 227.341 22.415 227.341 20.787V9.502H232.558Z"
+              fill="#F2F2F2"
+            />
+          </svg>
+        </div>
+        <div class="nav__item">
+          <a href="#swiper" class="nav__link">About</a>
+        </div>
+        <div class="nav__item">
+          <a href="#skills" class="nav__link">Skills</a>
+        </div>
+        <div class="nav__item">
+          <a href="#portfolio" class="nav__link">Work</a>
+        </div>
+      </nav>
+      <br /><br />
 
+      <div class="sticky__social">
+        <div class="social__col">
+          <a href="https://www.instagram.com/adamjamiu98/">
+            <i class="bx bxl-instagram inst-stick"></i
+          ></a>
+        </div>
+        <div class="social__col">
+          <a href="https://www.github.com/AdamJamiu7">
+            <i class="bx bxl-github git-stick"></i
+          ></a>
+        </div>
+        <div class="social__col">
+          <a href="https://www.twitter.com/AdamJamiu7">
+            <i class="bx bxl-twitter twit-stick"></i
+          ></a>
+        </div>
+      </div>
 
-<body>
+      <div class="hero">
+        <div class="hero_col">
+          <div class="about-details">
+            <div class="hero__title">Hi, I'm Adam</div>
+            <div class="front-end">Front-end Developer</div>
+            <p class="hero_txt">
+              Through constant Practise and learning of latest web technologies,
+              I build web softwares that sacles business.
+            </p>
+            <!-- <div class="swipe">
+                        <i class='bx bx-left-arrow-alt'><span>Swipe</span></i>
+                    </div> -->
+          </div>
+          <div class="home_scroll">
+            <i class="bx bx-mouse"></i>
+            <a href="#swiper"
+              ><span class="scroll"> Scroll down</span>
+              <i class="bx bxs-down-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
 
-    <div class=" l-header">
-        <nav class="nav" id="navbar">
+        <div class="hero_col">
+          <!-- <img
+            src="./assets/img/adam.png"
+            alt="Adam Jamiu"
+            width="250px"
+            height="250px"
+            class="hero_img"
+          /> -->
+          <svg width="297" height="236" viewBox="0 0 497 536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+            
+        </div>
+      </div>
 
-            <ul class="nav__list">
-
-                <li class="nav__item"><a href="#swiper" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                <li class="nav__item"><a href="#portfolio" class="nav__link">Work</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-            </ul>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-
-        </nav><br><br>
-
-        <div class="Home-text-animation">
+      <!-- <div class="Home-text-animation">
             <span>
                 <a href="" class="typewrite" data-period="4000"
                     data-type='[ "Web is my playground", "I am Creative.", "I love Design.", "I love to Develop." ]'>
@@ -62,325 +143,166 @@
                 </a>
             </span>
 
-        </div>
-        <div class="home_scroll">
-            <i class='bx bx-down-arrow-alt'><a href="#swiper"><span class="scroll"> Scroll down</span></a> </i>
-        </div>
+        </div> -->
     </div>
-
 
     <!--===== ABOUT =====-->
 
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-
-                <div class="about-wrap" id="about">
-
-                    <div class="about-details">
-                        <div class="home__title">Hi, I'm Adam </div>
-                        <div class="front-end ">Front-end Developer</div>
-                        <p class="about-txt ">
-                            Web is my playground. Through constant learning of latest web technologies,
-                            I build web softwares that sacles business but technologies i love right now is React.
-
-                        </p>
-                        <div class="swipe">
-                            <i class='bx bx-left-arrow-alt'><span>Swipe</span></i>
-                        </div>
-                    </div>
-
-                    <div class="avatar-wrap">
-                        <img src="assets/img/perfil.png" alt="avatar" class="avatar">
-
-                    </div>
-
-                </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="about-wrap" id="about">
+            <div class="about-details">
+              <div class="home__title">Hi, I'm Adam</div>
+              <div class="front-end">Front-end Developer</div>
+              <p class="about-txt">
+                Web is my playground. Through constant learning of latest web
+                technologies, I build web softwares that sacles business but
+                technologies i love right now is React.
+              </p>
+              <div class="swipe">
+                <i class="bx bx-left-arrow-alt"><span>Swipe</span></i>
+              </div>
             </div>
 
-
-            <!--===== PASSIONS =====-->
-
-            <div class="swiper-slide">
-                <div class="passion-wrap">
-                    <div class="passion-row">
-                        <div class="passion-grid">
-                            <h2 class="passion__header">Passions</h2>
-
-                            <ul class="passions">
-
-                                <li class="passion__text"><i class='bx bx-code-alt'></i>Coding</li>
-                                <li class="passion__text"><i class='bx bx-book-open'></i>Reading</li>
-                                <li class="passion__text"><i class='bx bx-laptop'></i>Technology</li>
-                            </ul>
-                        </div>
-
-                        <div class="passion-wrapper">
-                            <h2 class="passion__header">Languages</h2>
-
-                            <div class="passion__col">
-                                <div class="passion__subtitle">English</div>
-                                <span class="sub__title">Fluent</span>
-                                <div class="progress__wrap">
-                                    <div class="progress__bar-english"></div>
-                                </div>
-                            </div>
-                            <div class="passion__col">
-                                <div class="passion__subtitle">Arabic</div>
-                                <span class="sub__title">Intermediate</span>
-                                <div class="progress__wrap">
-                                    <div class="progress__bar-arabic"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <!--===== SKILLS =====-->
-
-            <div class="swiper-slide">
-                <div class="skills-wrap" id="skills">
-
-                    <h2 class="skills-header">Skills</h2>
-
-                    <div class="skills__grid-wrap">
-                        <div class="skills-row">
-                            <h4 class="skill__subtitle">Development</h4>
-
-                            <div class="skills-content">
-
-                                <p class="skills__name">HTML</p>
-                                <p class="skills__name">CSS</p>
-                                <p class="skills__name">JavaScript</p>
-                                <p class="skills__name">Bootstrap</p>
-                                <p class="skills__name">React</p>
-                                <p class="skills__name">GitHub</p>
-                                <p class="skills__name">jQuery</p>
-                                <p class="skills__name">Node</p>
-
-                            </div>
-                        </div>
-
-                        <div class="skills-row">
-                            <h4 class="skill__subtitle">Design</h4>
-
-                            <div class="skills-content">
-
-                                <p class="skills__name">Wordpress</p>
-                                <p class="skills__name">Figma</p>
-                                <p class="skills__name">Adobe XD</p>
-                                <p class="skills__name">PhotoShop</p>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
+           
+          </div>
         </div>
-    </div>
 
+        <!--===== SKILLS =====-->
+
+        <div class="swiper-slide">
+          <div class="skills-wrap" id="skills">
+            <h2 class="skills-header">Skills</h2>
+
+            <div class="skills__grid-wrap">
+              <div class="skills-row">
+                <h4 class="skill__subtitle">Development</h4>
+
+                <div class="skills-content">
+                  <p class="skills__name">HTML</p>
+                  <p class="skills__name">CSS</p>
+                  <p class="skills__name">JavaScript</p>
+                  <p class="skills__name">Bootstrap</p>
+                  <p class="skills__name">React</p>
+                  <p class="skills__name">GitHub</p>
+                  <p class="skills__name">jQuery</p>
+                  <p class="skills__name">Node</p>
+                </div>
+              </div>
+
+              <div class="skills-row">
+                <h4 class="skill__subtitle">Design</h4>
+
+                <div class="skills-content">
+                  <p class="skills__name">Wordpress</p>
+                  <p class="skills__name">Figma</p>
+                  <p class="skills__name">Adobe XD</p>
+                  <p class="skills__name">PhotoShop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--===== PORTFOLIO =====-->
 
     <section class="portfolio" id="portfolio">
-        <div class="portfolio-wrap">
-            <div class="port-head">Portfolio</div>
-            <span class="port-label">Works i have done</span>
+      <div class="portfolio-wrap">
+        <div class="port-head">Portfolio</div>
+        <span class="port-label">Works i have done</span>
 
-            <div class="port-col port-1">
-                <div class="overlay-container">
-                    <img src="/assets/img/Fyla.png" class="port-img fylo" alt="">
-                    <div class="overlay">
-                        <a href="https://adamjamiu.github.io/Fylo/">
-                            <div class="overlay-text">Visit Site</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="port-details">
-                    <p class="project-name">Fylo Dark Landing Page</p>
-                    <p class="port-txt">
-                        Fylo is a simple Landing Page built with pure HTML, CSS. The Landing Page Design is totaly
-                        responsive in Tab, iPad and Mobile phone devices
-                    </p>
-                </div>
+        <div class="port-col port-1">
+          <div class="overlay-container">
+            <img src="/assets/img/Fyla.png" class="port-img fylo" alt="" />
+            <div class="overlay">
+              <a href="https://adamjamiu.github.io/Fylo/">
+                <div class="overlay-text">Visit Site</div>
+              </a>
             </div>
-            <div class="port-col port-2">
-                <div class="overlay-container">
-                    <img src="/assets/img/mystudy_padi.png" class="port-img padi" alt="MyStudyPadi" >
-                    <div class="overlay">
-                        <a href="https://adamjamiu.github.io/MyStudyPadi/">
-                            <div class="overlay-text">Visit Site</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="port-details">
-                    <p class="project-name">myStudyPadi Landing Page</p>
-                    <p class="port-txt">
-                        My StudyPadi is a friendly mobile app that takes you a step closer to your academic goals. Our
-                        user interface,
-                        students community, timely reminders and organization are just the right tools you need to
-                        develop and maintain productivity
-                    </p>
-                </div>
-
-            </div>
-
-
+          </div>
+          <div class="port-details">
+            <p class="project-name">Fylo Dark Landing Page</p>
+            <p class="port-txt">
+              Fylo is a simple Landing Page built with pure HTML, CSS. The
+              Landing Page Design is totaly responsive in Tab, iPad and Mobile
+              phone devices
+            </p>
+          </div>
         </div>
-
+        <div class="port-col port-2">
+          <div class="overlay-container">
+            <img
+              src="/assets/img/mystudy_padi.png"
+              class="port-img padi"
+              alt="MyStudyPadi"
+            />
+            <div class="overlay">
+              <a href="https://adamjamiu.github.io/MyStudyPadi/">
+                <div class="overlay-text">Visit Site</div>
+              </a>
+            </div>
+          </div>
+          <div class="port-details">
+            <p class="project-name">myStudyPadi Landing Page</p>
+            <p class="port-txt">
+              My StudyPadi is a friendly mobile app that takes you a step closer
+              to your academic goals. Our user interface, students community,
+              timely reminders and organization are just the right tools you
+              need to develop and maintain productivity
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--===== CONTACT=====-->
 
     <section class="contact-section">
-
-        <div class="contact-wrap">
-
-        </div>
+      <div class="contact-wrap"></div>
     </section>
 
     <!--===== FOOTER =====-->
 
     <footer>
-
-        <div class=" footer">
-            <div class="col-sm">
-                <ul>
-                    <h3 class="footer-header">About</h3>
-                    <li class="footer-link">Handcrafted with HTML, CSS and JavaScript</li>
-                    <li class="footer-link">&#169; 2021 copyright</li>
-
-                </ul>
-            </div>
-            <div class="col-sm">
-                <ul>
-                    <h3 class="footer-header">Explore</h3>
-                    <a href="#swiper">
-                        <li class="footer-link ex"> About</li>
-                    </a>
-                    <a href="#skills">
-                        <li class="footer-link ex">Skills</li>
-                    </a>
-                    <a href="#portfolio">
-                        <li class="footer-link ex">Portfolio</li>
-                    </a>
-
-                </ul>
-            </div>
-            <div class="col-sm">
-                <h3 class="footer-header">Follow</h3>
-                <a href="https://www.instagram.com/adamjamiu98/"> <i class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/AdamJamiu"><i class='bx bxl-github'></i></a>
-                <a href="https://twitter.com/AdamJamiu7"><i class='bx bxl-twitter'></i> </a>
-            </div>
-        </div>
-
+      <div class="footer">
+        <p class="footer__text">
+          Coded with by <a href="https://twitter.com/AdamJamiu7"></a>
+        </p>
+      </div>
     </footer>
-
-
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
-   
 
     <!--===== UniCons=====-->
-    <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js" >    </script>
+    <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
 
     <script>
-        var swiper = new Swiper('.swiper-container');
+      $(document).ready(function () {
+        var scroll_pos = 0;
+        $(document).scroll(function () {
+          scroll_pos = $(this).scrollTop();
+          if (scroll_pos > 400) {
+            $(".nav").css("position", "fixed");
+            $(".nav").css("background-color", "#12181b");
+            $(".sticky__social").addClass("right");
+            $(".sticky__social").removeClass("left");
+
+          } else {
+            $(".nav").css("background-color", "inherit");
+            $(".nav").css("position", "relative");
+            $(".sticky__social").addClass("left");
+            $(".sticky__social").removeClass("right");
 
 
-        $(document).ready(function () {
-            var scroll_pos = 0;
-            $(document).scroll(function () {
-                scroll_pos = $(this).scrollTop();
-                if (scroll_pos > 400) {
-                    $(".nav").css('position', 'fixed');
-                    $(".nav").css('background-color', '#fff');
-                    $(".nav__link").css('font-weight', '700');
-                    $(".nav__link").css('color', 'rgba(15, 15, 15, 0.75)');
-                } else if (scroll_pos < 400) {
-                    $(".nav__link").css('color', 'rgba(255,255,255,.75)');
-                    $(".nav").css('background-color', 'transparent');
-                    $(".nav__link").css('font-weight', '500');
-                    $(".nav").css('position', 'relative');
-                }
-            });
+          }
         });
-
-
-
-
-
-        var TxtType = function (el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtType.prototype.tick = function () {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function () {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function () {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
-        };
+      });
     </script>
-
-
-</body>
-
+  </body>
 </html>
