@@ -9,6 +9,10 @@
     />
     <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/react@16.3.1/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
     <link
       rel="icon"
@@ -16,6 +20,9 @@
       type="image/gif"
       sizes="26x26"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link
@@ -34,6 +41,7 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -58,6 +66,7 @@
       <nav class="nav" id="navbar">
         <div class="nav__items">
           <svg
+          class="logo"
             width="133"
             height="31"
             viewBox="0 0 233 31"
@@ -70,16 +79,34 @@
             />
           </svg>
         </div>
-        <div class="nav__item">
-          <a href="#swiper" class="nav__link">About</a>
-        </div>
-        <div class="nav__item">
-          <a href="#skills" class="nav__link">Skills</a>
-        </div>
-        <div class="nav__item">
-          <a href="#portfolio" class="nav__link">Work</a>
-        </div>
+        <div class="nav__item nav-link__item">
+         <ul class="link__wrapper">
+           <li class="nav__list">
+            <a href="#about" class="nav__link">
+            About
+          </a>
+            </li>
+            <li class="nav__list">
+              <a href="#Portfolio" class="nav__link">
+              Work
+            </a>
+              </li>
+
+              <li class="nav__list">
+                <a href="" class="nav__link">
+                Portfolio
+              </a>
+                </li>
+         </ul>
+
+          </div>
+          
+          
+         <div class="nav__item">
+          <i class="fas fa-cog"></i>
+         </div>
       </nav>
+      
       <br /><br />
 
       <div class="sticky__social">
@@ -123,15 +150,21 @@
         </div>
 
         <div class="hero_col">
-          <!-- <img
+          <img
             src="./assets/img/adam.png"
             alt="Adam Jamiu"
             width="250px"
             height="250px"
             class="hero_img"
-          /> -->
-          <svg width="297" height="236" viewBox="0 0 497 536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
-            
+          />
+          <svg
+            width="297"
+            height="236"
+            viewBox="0 0 497 536"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          ></svg>
         </div>
       </div>
 
@@ -156,7 +189,7 @@
               <div class="home__title">Hi, I'm Adam</div>
               <div class="front-end">Front-end Developer</div>
               <p class="about-txt">
-                Web is my playground. Through constant learning of latest web
+                Through constant learning of latest web
                 technologies, I build web softwares that sacles business but
                 technologies i love right now is React.
               </p>
@@ -164,8 +197,6 @@
                 <i class="bx bx-left-arrow-alt"><span>Swipe</span></i>
               </div>
             </div>
-
-           
           </div>
         </div>
 
@@ -198,7 +229,8 @@
                   <p class="skills__name">Wordpress</p>
                   <p class="skills__name">Figma</p>
                   <p class="skills__name">Adobe XD</p>
-                  <p class="skills__name">PhotoShop</p>
+img/Fyla.png" width="350px" height="200px" class="port-img fylo" alt="" />
+            <button class="port-btn"                  <p class="skills__name">PhotoShop</p>
                 </div>
               </div>
             </div>
@@ -209,22 +241,19 @@
 
     <!--===== PORTFOLIO =====-->
 
-    <section class="portfolio" id="portfolio">
-      <div class="portfolio-wrap">
-        <div class="port-head">Portfolio</div>
+    <div class="portfolio" id="portfolio">
+     
+        <span class="port-head">Portfolio</span>
         <span class="port-label">Works i have done</span>
+        <div class="portfolio-wrap">
 
-        <div class="port-col port-1">
+        <div class="port-co">
           <div class="overlay-container">
-            <img src="/assets/img/Fyla.png" class="port-img fylo" alt="" />
-            <div class="overlay">
-              <a href="https://adamjamiu.github.io/Fylo/">
-                <div class="overlay-text">Visit Site</div>
-              </a>
-            </div>
+            <img src="/assets/>Visit Site</button>
           </div>
+
           <div class="port-details">
-            <p class="project-name">Fylo Dark Landing Page</p>
+            <h1 class="project-name">Fylo Dark Landing Page</h1>
             <p class="port-txt">
               Fylo is a simple Landing Page built with pure HTML, CSS. The
               Landing Page Design is totaly responsive in Tab, iPad and Mobile
@@ -232,21 +261,20 @@
             </p>
           </div>
         </div>
-        <div class="port-col port-2">
+        <div class="port-col">
           <div class="overlay-container">
             <img
               src="/assets/img/mystudy_padi.png"
-              class="port-img padi"
+              class="port-img "
               alt="MyStudyPadi"
+              width="350px"
+              height="200px"
             />
-            <div class="overlay">
-              <a href="https://adamjamiu.github.io/MyStudyPadi/">
-                <div class="overlay-text">Visit Site</div>
-              </a>
-            </div>
+            <button class="port-btn">Visit Site</button>
+           
           </div>
           <div class="port-details">
-            <p class="project-name">myStudyPadi Landing Page</p>
+            <h1 class="project-name">MyStudyPadi Landing Page</h1>
             <p class="port-txt">
               My StudyPadi is a friendly mobile app that takes you a step closer
               to your academic goals. Our user interface, students community,
@@ -256,7 +284,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--===== CONTACT=====-->
 
@@ -281,7 +309,7 @@
 
     <!--===== UniCons=====-->
     <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
-
+    <script src="./assets/js/app.js" type="text/babel"></script>
     <script>
       $(document).ready(function () {
         var scroll_pos = 0;
@@ -292,14 +320,11 @@
             $(".nav").css("background-color", "#12181b");
             $(".sticky__social").addClass("right");
             $(".sticky__social").removeClass("left");
-
           } else {
             $(".nav").css("background-color", "inherit");
             $(".nav").css("position", "relative");
             $(".sticky__social").addClass("left");
             $(".sticky__social").removeClass("right");
-
-
           }
         });
       });

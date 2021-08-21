@@ -27,7 +27,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #12181b;
+  background-color: #fff;
 }
 
 ul {
@@ -37,6 +37,10 @@ ul {
 }
 a:link {
   text-decoration: none;
+}
+
+.container {
+  padding: 0 3em 0 3em;
 }
 
 /* Sticky Social bAR */
@@ -52,11 +56,11 @@ a:link {
   top: 11em;
 }
 
-.left{
+.left {
   left: 1px;
 }
 
-.right{
+.right {
   right: 10px;
   position: fixed;
 }
@@ -140,56 +144,50 @@ a:link {
 /*===== PORTFOLIO SECTION ===== */
 .portfolio {
   /* background: #f7f4ff; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 100%;
   align-items: center;
-  padding-left: 10em;
-  padding-right: 10em;
+  flex-wrap: nowrap;
+
 }
 
 .portfolio-wrap {
-  width: 100%;
+  width: 800px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+  height: fit-content;
+  background-color: red;
+  /* overflow: hidden; */
 }
 
 .port-col {
   display: flex;
-  column-gap: 3em;
-  margin-bottom: 15%;
+  justify-content: center;
+  width: max-content;
+  justify-content: center;
 }
 
 .port-head {
-  font-weight: 900;
-  font-size: 34px;
-  margin-top: 5%;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .port-label {
   color: #0000004a;
-  font-weight: 800;
-  margin-bottom: 8%;
+  font-weight: 500;
+  margin-bottom: 4%;
 }
 .port-img {
   border-radius: 1rem;
   box-shadow: 2px 2px 50px rgb(0 0 0 / 15%);
   transition: transform 0.5s;
   cursor: pointer;
-  height: auto;
   display: block;
-  width: 100%;
-}
-
-img.fylo {
-  width: 420px;
-  height: 320px;
-}
-
-img.padi {
-  width: 450px;
-  height: 340px;
 }
 
 .port-img:hover {
@@ -197,15 +195,13 @@ img.padi {
 }
 
 .port-details {
-  width: 20rem;
-  padding-top: 4em;
+  width: 100%;
 }
 
 .project-name {
-  font-size: 1.3rem;
-  font-weight: 800;
-
-  padding-bottom: 1em;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2.5;
 }
 
 p {
@@ -214,16 +210,11 @@ p {
 }
 
 .port-txt {
-  line-height: 1.8;
   font-size: 0.975rem;
   color: #878787;
 }
 
-.port-2,
-.port-4,
-.port-6 {
-  flex-direction: row-reverse;
-}
+
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
@@ -252,9 +243,17 @@ p {
 /*===== Header Section =====*/
 
 .l-header {
-  /* background-image: url("/assets/img/squares.png"); */
-  height: 95vh;
-  /* background-size: 300%; */
+  /* background-color: #12181b; */
+  height: 100vh;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("./assets/img/Vector.svg");
+  background: #151418;
+}
+
+.logo {
+  float: left;
 }
 
 @media only screen and (max-width: 400px) {
@@ -303,15 +302,35 @@ p {
 /*===== NAV =====*/
 
 .nav {
-  height: 6rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 3em;
   transition: 0.5s ease;
   width: 100%;
+  height: 15vh;
   z-index: 9;
+  padding: 0.1em 3em 0 3em;
+}
+
+.fa-cog {
+  color: #fff;
+  font-size: 27px;
+  cursor: pointer;
+  background-color: #9a12b3;
+  padding: 0.4em 0.5em;
+  border-radius: 7px;
+}
+
+.nav-link__item {
+  padding: 3em;
+}
+
+.link__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
 }
 
 .nav__item:active {
@@ -334,6 +353,10 @@ a.nav__link:hover {
 
   ul li {
     display: block;
+  }
+
+  .fa-cog {
+    background: none;
   }
 }
 
@@ -481,12 +504,13 @@ p.skills__name {
     flex-wrap: wrap;
   }
 
-  .portfolio-wrap {
-    padding: 0;
+  .portfolio {
+    padding: 3em;
   }
 
   .port-details {
     padding-top: 2em;
+    width: 100%;
   }
 
   .swipe {
@@ -838,6 +862,7 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
   }
 
   .port-txt {
@@ -858,17 +883,11 @@ footer {
     rgba(0, 0, 0, 0.9248074229691877) 100%
   );
   overflow: hidden;
-  width: 100%;
-  height: 0;
   transition: 0.5s ease;
 }
 
-.overlay-container:hover .overlay {
-  height: 100%;
-  border-radius: 10px;
-}
 
-.overlay-text {
+.port-btn {
   font-size: 14px;
   color: #fff;
   background-color: #9a12b3;
@@ -893,7 +912,6 @@ footer {
 
 .overlay-container {
   position: relative;
-  width: 70%;
 }
 
 .bx-arrow-back {
